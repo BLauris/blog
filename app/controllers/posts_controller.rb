@@ -2,7 +2,7 @@ class PostsController < ApplicationController
 
 	def new
 		@post = Post.new
-  	end
+  	end 
 
 	def index # show all public's
   		@posts = Post.all
