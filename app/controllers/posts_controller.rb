@@ -2,11 +2,19 @@ class PostsController < ApplicationController
 
 	def new
 		@post = Post.new
+<<<<<<< HEAD
   	end 
 
 	def index # show all public's
   		@posts = Post.all
 	end
+=======
+  	end  
+
+	def index # show all public's
+  		@posts = Post.all
+	end 
+>>>>>>> master
 
 	def create
 		@post = Post.new(post_params)
