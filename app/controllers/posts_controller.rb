@@ -6,7 +6,7 @@ class PostsController < ApplicationController
 
 	def index # show all public's
   		@posts = Post.all
-	end
+	end 
 
 	def create
 		@post = Post.new(post_params)
