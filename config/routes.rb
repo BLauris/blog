@@ -1,15 +1,7 @@
 Blog::Application.routes.draw do
-<<<<<<< HEAD
-    resources :posts
-    root "posts#index" 
-  # The priority is based upon order of creation: first created -> highest priority.
-=======
-  resources :posts
-  # The priority is based  upon order of creation: first created -> highest priority.
->>>>>>> master
-  # See how all your routes lay out with "rake routes".
    
   # You can have the root of your site routed with "root"
+   resources :posts
    root 'posts#new'
 
   # Example of regular route:
