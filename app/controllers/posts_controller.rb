@@ -1,20 +1,12 @@
 class PostsController < ApplicationController
 
 	def new
-		@post = Post.new
-<<<<<<< HEAD
+		puts @post = Post.new	
   	end 
 
 	def index # show all public's
   		@posts = Post.all
-	end
-=======
-  	end  
-
-	def index # show all public's
-  		@posts = Post.all
 	end 
->>>>>>> master
 
 	def create
 		@post = Post.new(post_params)
@@ -25,6 +17,7 @@ class PostsController < ApplicationController
 			render 'new'
 		end
 	end
+	
 	def post_params
     	params.require(:post).permit(:title, :text)
   	end

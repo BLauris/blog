@@ -29,12 +29,10 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-<<<<<<< HEAD
+
 # Use gem Haml 
-# gem 'haml-rails'
-=======
-gem 'haml'
->>>>>>> 618564b5941a87f7320d76ee0a487c20fa5d0336
+gem 'haml-rails'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
