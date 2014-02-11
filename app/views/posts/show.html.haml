@@ -1,9 +1,21 @@
+/ show parent comments  /
 %p 
-  %strong Title:
+  %strong Title: 
   = @post.title
 %p
   %strong Text:
   = @post.text
+
+
+
+%h2 Comments
+=render @post.comments # add comments partial
+
+/- @post.comments.each do |comment|
+ 
+%h2 Add a comment:
+=render 'comments/form' # add form partial 
+
 %p 
   = link_to 'Back', posts_path   
 %p

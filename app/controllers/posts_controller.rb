@@ -1,9 +1,13 @@
 class PostsController < ApplicationController
 
-	def new
-		puts @post = Post.new	
-  	end 
+	# authentificate user's 
+	http_basic_authenticate_with name: "admin", password: "secret", except: [:index, :show] 
 
+
+	def new
+		puts @post = Post.new			
+  	end 
+ 	    	
 	def index # show all public's
   		@posts = Post.all
 	end 
