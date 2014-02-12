@@ -1,8 +1,6 @@
 class Post < ActiveRecord::Base
+	has_many :comments, dependent: :destroy 
+	
 	validates :title, presence: true,
-<<<<<<< HEAD
-               length: { minimum: 5 }
-=======
-                    length: { minimum: 5 }
->>>>>>> master
+               length: { minimum: 5 }               
 end
