@@ -4,8 +4,9 @@ Blog::Application.routes.draw do
   resources :posts do
     resources :comments
   end
-   root 'posts#new'
-                                  
+   root 'user#new'
+   
+  get 'persons/profile', as: 'user_root'                                
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
