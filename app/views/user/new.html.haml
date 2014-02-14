@@ -1,9 +1,8 @@
-%h1 Persons#profile
+%h2 Header page
 
 - if user_signed_in?
   %span
     Hello!, #{current_user.email}
-  %p
   = link_to 'Exit', destroy_user_session_path, :method => :delete
 - else
   = link_to 'Sign in', new_user_session_path
