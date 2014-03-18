@@ -1,11 +1,15 @@
 Blog::Application.routes.draw do
    
+  devise_for :users
+ 
+  get "persons/profile"
   # You can have the root of your site routed with "root"
   resources :posts do
     resources :comments
   end
-   root 'posts#new'
-                                  
+   root 'user#new'
+   
+  get 'persons/profile', as: 'user_root'                                
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
